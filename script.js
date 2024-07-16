@@ -17,6 +17,13 @@ const subtract = (a, b) => {
 console.log(subtract(4, 2));
 
 // Create a multiply function
+const multiply = (a, b) => {
+    const c = a * b;
+    return c;
+};
+
+console.log(multiply(2, 2));
+
 // Create a divide function
 
 // Create a new function operate that takes an operator and 2 numbers and then calls one of the above functions on the numbers.
