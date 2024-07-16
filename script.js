@@ -60,6 +60,16 @@ const resultInput = document.querySelector("#result");
 // resultInput.textContent = '78594';
 const display = (val) => {
     resultInput.value += val;
+    // console.log('result input : ' + resultInput.value)
 }
 
+const buttons = document.querySelectorAll("input[type='button']");
+buttons.forEach(button => {
+    button.addEventListener("click", function() {
+        console.log(button.value);
+        // resultInput.textContent = button.value;
+        console.log("resultInput: " + resultInput.textContent );
+        display(button.value);
+    })
+})
 // Make the calculator work! You’ll need to store the first number and second number that are input into the calculator, utilize the operator that the user selects, and then operate() on the two numbers when the user presses the “=” key.
