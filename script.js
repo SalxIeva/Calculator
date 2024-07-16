@@ -56,5 +56,10 @@ const operate = (operator, firstNum, secondNum) => {
 }
 
 // Create the functions that populate the display when you click the number buttons. You should be storing the ‘display value’ in a variable somewhere for use in the next step.
+const resultInput = document.querySelector("#result");
+// resultInput.textContent = '78594';
+const display = (val) => {
+    resultInput.value += val;
+}
 
 // Make the calculator work! You’ll need to store the first number and second number that are input into the calculator, utilize the operator that the user selects, and then operate() on the two numbers when the user presses the “=” key.
