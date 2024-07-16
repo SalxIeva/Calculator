@@ -25,6 +25,12 @@ const multiply = (a, b) => {
 console.log(multiply(2, 2));
 
 // Create a divide function
+const divide = (a, b) => {
+    const c = a / b;
+    return c;
+};
+
+console.log(divide(4, 2));
 
 // Create a new function operate that takes an operator and 2 numbers and then calls one of the above functions on the numbers.
 
