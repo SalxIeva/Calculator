@@ -32,6 +32,13 @@ const divide = (a, b) => {
 
 console.log(divide(4, 2));
 
+
+// Create three variables for each of the parts of a calculator operation. Create a variable for the first number, the operator, and the second number. 
+
+let firstNum;
+let operator;
+let secondNum;
+
 // Create a new function operate that takes an operator and 2 numbers and then calls one of the above functions on the numbers.
 
 // Create the functions that populate the display when you click the number buttons. You should be storing the ‘display value’ in a variable somewhere for use in the next step.
