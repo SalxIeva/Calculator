@@ -9,6 +9,13 @@ const add = (a, b) => {
 console.log(add(3, 4));
 
 // Create a subtract function
+const subtract = (a, b) => {
+    const c = a - b;
+    return c;
+}
+
+console.log(subtract(4, 2));
+
 // Create a multiply function
 // Create a divide function
 
