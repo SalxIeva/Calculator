@@ -1,6 +1,13 @@
 // console.log('Hello');
 
 // Create a add function
+const add = (a, b) => {
+    const c = a + b;
+    return c;
+}
+
+console.log(add(3, 4));
+
 // Create a subtract function
 // Create a multiply function
 // Create a divide function
