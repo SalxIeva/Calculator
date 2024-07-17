@@ -77,6 +77,9 @@ buttons.forEach(button => {
 const clearBtn = document.querySelector("#clear");
 clearBtn.addEventListener("click", function() {
     resultInput.value = '';
+    firstNum = '';
+    operator = '';
+    secondNum = '';
 });
 
 const resultBtn = document.querySelector(".equals");
