@@ -29,21 +29,23 @@ let secondNum = '';
 
 // Create a new function operate that takes an operator and 2 numbers and then calls one of the above functions on the numbers.
 
-const operate = (operator, firstNum, secondNum) => {
-    firstNum = resultInput.textContent;
-    secondNum = resultInput.textContent;
+const operate = () => {
+    const a = parseFloat(firstNum);
+    const b = parseFloat(secondNum);
+    let result;
     if (operator === '+') {
-        add(firstNum, secondNum);
+       result = add(a, b);
     } else if (operator === '-') {
-        subtract(firstNum, secondNum);
+        result = subtract(a, b);
     } else if (operator === '*') {
-        multiply(firstNum, secondNum);
+        result = multiply(a, b);
     } else if (operator === '/') {
-        divide(firstNum, secondNum);
-        
+        result = divide(a, b);
     } else {
-        return alert('Invalid action');
+        result = 'Error';
     }
+    resultInput.value = result;
+    console.log(resultInput.value);
     
 }
 
