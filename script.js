@@ -83,3 +83,6 @@ const clearBtn = document.querySelector("#clear");
 clearBtn.addEventListener("click", function() {
     resultInput.value = '';
 });
+
+const resultBtn = document.querySelector(".equals");
+resultBtn.addEventListener("click", operate);
