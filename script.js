@@ -46,6 +46,11 @@ const operate = () => {
     }
     resultInput.value = result;
     console.log(resultInput.value);
+
+    // Resetting values og firstNum, operator and secondNum after result
+    firstNum = '';
+    operator = '';
+    secondNum = '';
     
 }
 
