@@ -2,6 +2,10 @@
 
 This is a simple calculator web application implemented using HTML, CSS, and JavaScript. The calculator supports basic arithmetic operations: addition, subtraction, multiplication, and division.
 
+## Live Preview:
+
+https://salxieva.github.io/Calculator/
+
 ## Features
 
 - Basic arithmetic operations: addition, subtraction, multiplication, and division.
