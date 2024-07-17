@@ -74,11 +74,10 @@ buttons.forEach(button => {
                 console.log(`firstNum: ${firstNum}`);
                 resultInput.value = '';
             }
-            // firstNum = resultInput.value;
+        
             operator = value;
             console.log(`operator: ${operator}`);
-            // resultInput.value = '';
-            // console.log(`firstNum: ${firstNum}`);
+
         } else if (value === '=') {
             secondNum = resultInput.value;
             console.log(`secondNum: ${secondNum}`);
