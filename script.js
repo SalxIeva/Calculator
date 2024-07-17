@@ -42,6 +42,8 @@ let secondNum;
 // Create a new function operate that takes an operator and 2 numbers and then calls one of the above functions on the numbers.
 
 const operate = (operator, firstNum, secondNum) => {
+    firstNum = resultInput.textContent;
+    secondNum = resultInput.textContent;
     if (operator === '+') {
         add(firstNum, secondNum);
     } else if (operator === '-') {
@@ -50,9 +52,11 @@ const operate = (operator, firstNum, secondNum) => {
         multiply(firstNum, secondNum);
     } else if (operator === '/') {
         divide(firstNum, secondNum);
+        
     } else {
         return alert('Invalid action');
     }
+    
 }
 
 // Create the functions that populate the display when you click the number buttons. You should be storing the ‘display value’ in a variable somewhere for use in the next step.
@@ -71,5 +75,11 @@ buttons.forEach(button => {
         console.log("resultInput: " + resultInput.textContent );
         display(button.value);
     })
-})
+});
+
 // Make the calculator work! You’ll need to store the first number and second number that are input into the calculator, utilize the operator that the user selects, and then operate() on the two numbers when the user presses the “=” key.
+
+const clearBtn = document.querySelector("#clear");
+clearBtn.addEventListener("click", function() {
+    resultInput.value = '';
+});
