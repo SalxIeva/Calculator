@@ -47,7 +47,7 @@ const operate = () => {
     firstNum = '';
     operator = '';
     secondNum = '';
-    
+
 }
 
 // Create the functions that populate the display when you click the number buttons. You should be storing the ‘display value’ in a variable somewhere for use in the next step.
@@ -59,15 +59,26 @@ const display = (val) => {
 const buttons = document.querySelectorAll("input[type='button']");
 buttons.forEach(button => {
     button.addEventListener("click", function() {
-
-
         const value = button.value;
+
         if (button.classList.contains("operator")) {
-            firstNum = resultInput.value;
+            if (firstNum && operator && resultInput.value) {
+                // Perform an ongoing operation first
+                secondNum = resultInput.value;
+                operate();
+                firstNum = resultInput.value;
+                console.log(`firstNum: ${firstNum}`);
+                resultInput.value = '';
+            } else {
+                firstNum = resultInput.value;
+                console.log(`firstNum: ${firstNum}`);
+                resultInput.value = '';
+            }
+            // firstNum = resultInput.value;
             operator = value;
             console.log(`operator: ${operator}`);
-            resultInput.value = '';
-            console.log(`firstNum: ${firstNum}`);
+            // resultInput.value = '';
+            // console.log(`firstNum: ${firstNum}`);
         } else if (value === '=') {
             secondNum = resultInput.value;
             console.log(`secondNum: ${secondNum}`);
