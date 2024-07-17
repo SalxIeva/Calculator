@@ -95,13 +95,13 @@ buttons.forEach(button => {
 
 // Make the calculator work! You’ll need to store the first number and second number that are input into the calculator, utilize the operator that the user selects, and then operate() on the two numbers when the user presses the “=” key.
 
-const clearBtn = document.querySelector("#clear");
-clearBtn.addEventListener("click", function() {
-    resultInput.value = '';
-    firstNum = '';
-    operator = '';
-    secondNum = '';
-});
+// const clearBtn = document.querySelector("#clear");
+// clearBtn.addEventListener("click", function() {
+//     resultInput.value = '';
+//     firstNum = '';
+//     operator = '';
+//     secondNum = '';
+// });
 
-const resultBtn = document.querySelector(".equals");
-resultBtn.addEventListener("click", operate);
+// const resultBtn = document.querySelector(".equals");
+// resultBtn.addEventListener("click", operate);
