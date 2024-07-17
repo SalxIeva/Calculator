@@ -65,10 +65,31 @@ const display = (val) => {
 const buttons = document.querySelectorAll("input[type='button']");
 buttons.forEach(button => {
     button.addEventListener("click", function() {
-        console.log(button.value);
+        // console.log(button.value);
         // resultInput.textContent = button.value;
-        console.log("resultInput: " + resultInput.textContent );
-        display(button.value);
+        // console.log("resultInput: " + resultInput.textContent );
+        // display(button.value);
+
+        const value = button.value;
+        if (button.classList.contains("operator")) {
+            firstNum = resultInput.value;
+            operator = value;
+            console.log(`operator: ${operator}`);
+            resultInput.value = '';
+            console.log(`firstNum: ${firstNum}`);
+        } else if (value === '=') {
+            secondNum = resultInput.value;
+            console.log(`secondNum: ${secondNum}`);
+            operate();
+        } else if (value === 'C') {
+            resultInput.value = '';
+            firstNum = '';
+            operator = '';
+            secondNum = '';
+        } else {
+            display(value);
+        }
+        // console.log(`resultInput: ${resultInput.value}`);
     })
 });
 
