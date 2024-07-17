@@ -1,34 +1,22 @@
 // console.log('Hello');
 
 // Create a add function
-const add = (a, b) => {
-    const c = a + b;
-    return c;
-}
+const add = (a, b) => a + b;
 
 console.log(add(3, 4));
 
 // Create a subtract function
-const subtract = (a, b) => {
-    const c = a - b;
-    return c;
-}
+const subtract = (a, b) => a - b;
 
 console.log(subtract(4, 2));
 
 // Create a multiply function
-const multiply = (a, b) => {
-    const c = a * b;
-    return c;
-};
+const multiply = (a, b) => a * b;
 
 console.log(multiply(2, 2));
 
 // Create a divide function
-const divide = (a, b) => {
-    const c = a / b;
-    return c;
-};
+const divide = (a, b) => a / b;
 
 console.log(divide(4, 2));
 
